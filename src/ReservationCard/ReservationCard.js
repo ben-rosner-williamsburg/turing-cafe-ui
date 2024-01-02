@@ -5,7 +5,7 @@ function ReservationCard({reservation}) {
     <h3>{name}</h3>
     <p>{date}</p>
     <p>{time}</p>
-    <p>Number of Guests: {number}</p>
+    <p className="no-of-guests">Number of Guests: {number}</p>
     </div>
   )
 }

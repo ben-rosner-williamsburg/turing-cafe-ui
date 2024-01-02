@@ -1,5 +1,5 @@
 import ReservationCard from "../ReservationCard/ReservationCard"
-
+import "./ReservationCards.css"
 function ReservationCards({reservations}) {
   const newReservations = reservations.map(reservation => {
     return (

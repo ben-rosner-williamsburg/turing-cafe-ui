@@ -1,0 +1,9 @@
+.no-of-guests {
+  letter-spacing: 1.8px;
+}
+
+.reservation-card {
+  box-sizing: border-box;
+  border: 3px solid black;
+  padding: 10px;
+}
