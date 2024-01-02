@@ -1,13 +1,25 @@
 import './App.css';
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import { getReservations } from '../apiCalls';
+import ReservationCards from "../ReservationCards/ReservationCards"
 
 function App() {
+  const [reservations, setReservations] = useState([]);
+  const fetchData = () => {
+     getReservations().then(data => {
+      setReservations(data)
+     });
+  }
+  useEffect(() => {
+    fetchData()
+  }, [])
   return (
     <div className="App">
       <h1 className='app-title'>Turing Cafe Reservations</h1>
       <div className='resy-form'>
       </div>
       <div className='resy-container'>
+        <ReservationCards reservations={reservations}/>
       </div>
     </div>
   );
