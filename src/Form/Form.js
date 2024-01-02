@@ -44,7 +44,7 @@ function Form({addReservation}) {
       <input
       name="number"
       type="text"
-      placeholder="Number of Guest"
+      placeholder="Number of Guests"
       onChange={(event) => {setDataToForm(event)}}
       value={form.number}
       />
