@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Form.css"
 function Form({addReservation}) {
   const [form, setForm] = useState({
     name: "",
@@ -19,42 +20,34 @@ function Form({addReservation}) {
   }
   return(
     <form className="input-reservation-form">
-      <label>Name:
       <input
       name="name"
       type="text"
-      placeholder="name"
+      placeholder="Name"
       onChange={(event) => {setDataToForm(event)}}
       value={form.name}
       />
-      </label>
-      <label>Date:
       <input
       name="date"
       type="text"
-      placeholder="date"
+      placeholder="Date (mm/dd)"
       onChange={(event) => {setDataToForm(event)}}
       value={form.date}
       />
-      </label>
-      <label>Time:
       <input
       name="time"
       type="text"
-      placeholder="time"
+      placeholder="Time"
       onChange={(event) => {setDataToForm(event)}}
       value={form.time}
       />
-      </label>
-      <label>Number:
       <input
       name="number"
       type="text"
-      placeholder="number"
+      placeholder="Number of Guest"
       onChange={(event) => {setDataToForm(event)}}
       value={form.number}
       />
-      </label>
       <button type="submit" onClick={handleSubmit}>Make Reservation!</button>
     </form>
   )

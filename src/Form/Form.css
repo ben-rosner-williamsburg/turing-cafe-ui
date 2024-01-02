@@ -1,0 +1,15 @@
+form {
+  margin: auto;
+}
+
+input, button {
+  margin: 5px;
+  width: 30%;
+  border: 2px solid white;
+  font-size: 18px;
+}
+
+button {
+  background-color: teal;
+  font-family: 'Arial', sans-serif;
+}
