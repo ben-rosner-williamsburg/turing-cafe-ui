@@ -17,6 +17,7 @@ function App() {
     <div className="App">
       <h1 className='app-title'>Turing Cafe Reservations</h1>
       <div className='resy-form'>
+        {/* <Form /> */}
       </div>
       <div className='resy-container'>
         <ReservationCards reservations={reservations}/>
